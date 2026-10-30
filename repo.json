@@ -1,0 +1,31 @@
+{
+  "format": 1,
+  "name": "Silent Edit repo",
+  "description": "Silent Edit plugin for Valenced",
+  "plugins": {
+    "coder.silent-edit": {
+      "name": "Silent Edit",
+      "description": "Edit messages without showing (edited) on the message.",
+      "author": "camposss <1340038288429547581>",
+      "icon": "PencilIcon",
+      "channels": {
+        "latest": "1.0.3"
+      },
+      "versions": {
+        "1.0.3": {
+          "url": "https://raw.githubusercontent.com/campoossgit/silent-edit/main/silent-edit-1.0.3.bin",
+          "sha256": "55cb70ed5c36921d685d10534a86f62bf9a404e8371bf4a0a107071be1775725",
+          "size": 4090,
+          "dependencies": {
+            "valenced.api": {
+              "version": "*"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    }
+  }
+}
