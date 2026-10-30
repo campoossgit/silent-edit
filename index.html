@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Silent Edit para Valanced" />
+    <title>Silent Edit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #0b1020;
+        --panel: #121a2b;
+        --panel-strong: #1a2439;
+        --primary: #7c9cff;
+        --primary-strong: #5d7ef5;
+        --text: #edf3ff;
+        --muted: #b9c6e5;
+        --success: #34d399;
+        --shadow: rgba(8, 12, 26, 0.45);
+      }
+
+      * { box-sizing: border-box; }
+
+      html, body {
+        margin: 0;
+        min-height: 100%;
+        font-family: "Inter", sans-serif;
+        background: radial-gradient(circle at top, #17213a 0%, var(--bg) 48%);
+        color: var(--text);
+      }
+
+      body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      .card {
+        width: min(100%, 520px);
+        background: rgba(18, 26, 43, 0.9);
+        border: 1px solid rgba(124, 156, 255, 0.25);
+        border-radius: 24px;
+        box-shadow: 0 30px 80px var(--shadow);
+        padding: 40px 32px 28px;
+        backdrop-filter: blur(10px);
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(124, 156, 255, 0.12);
+        color: var(--primary);
+        border: 1px solid rgba(124, 156, 255, 0.35);
+        border-radius: 999px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 8px 12px;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.2rem, 3vw, 3rem);
+        line-height: 1.1;
+      }
+
+      .subtitle {
+        margin: 12px 0 0;
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      .actions {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-top: 28px;
+      }
+
+      button,
+      a.button {
+        appearance: none;
+        border: 0;
+        border-radius: 12px;
+        padding: 14px 18px;
+        font: inherit;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
+        transition: transform 0.18s ease, filter 0.18s ease, opacity 0.18s ease;
+      }
+
+      button:hover,
+      a.button:hover {
+        transform: translateY(-1px);
+        filter: brightness(1.08);
+      }
+
+      .copy-btn {
+        background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+        color: white;
+        box-shadow: 0 10px 26px rgba(93, 126, 245, 0.38);
+      }
+
+      .source-btn {
+        background: rgba(255,255,255,0.03);
+        color: var(--text);
+        border: 1px solid rgba(255,255,255,0.12);
+      }
+
+      .status {
+        min-height: 24px;
+        margin-top: 14px;
+        font-size: 0.92rem;
+        color: var(--success);
+        opacity: 0;
+        transition: opacity 0.2s ease;
+      }
+
+      .status.visible {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="badge">Valanced Plugin</div>
+      <h1>Silent Edit</h1>
+      <p class="subtitle">
+        Download and source for the Silent Edit plugin.
+      </p>
+
+      <div class="actions">
+        <button id="copyBtn" class="copy-btn" type="button">Copy</button>
+        <a id="sourceBtn" class="button source-btn" href="https://github.com/w4kzzz/silent-edit" target="_blank" rel="noreferrer">Source</a>
+      </div>
+
+      <div id="status" class="status" aria-live="polite">URL copied.</div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
