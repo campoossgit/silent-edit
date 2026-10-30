@@ -13,7 +13,7 @@
       },
       "versions": {
         "1.0.3": {
-          "url": "https://raw.githubusercontent.com/campoossgit/silent-edit/main/silent-edit-1.0.3.bin",
+          "url": "https://github.com/campoossgit/silent-edit/releases/download/silentedit/silent-edit@1.0.3.zip",
           "sha256": "55cb70ed5c36921d685d10534a86f62bf9a404e8371bf4a0a107071be1775725",
           "size": 4090,
           "dependencies": {
