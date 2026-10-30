@@ -14,7 +14,7 @@
       "versions": {
         "1.0.1": {
           "url": "https://x0.at/silentedit_dy0g.zip",
-          "sha256": "200b81262173b49b3cd1522bfb1255898ec8de8459cec7c3765f6b6384471d28",
+          "sha256": "92575b8a168a66b977d8841515b4e8a02e66480b4807511d6d2c9c3a7b88018b",
           "size": 2786,
           "dependencies": {
             "valenced.api": {
