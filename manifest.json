@@ -1,0 +1,31 @@
+{
+  "format": 1,
+  "name": "Silent Edit",
+  "description": "Silent Edit para o Valenced",
+  "plugins": {
+    "coder.silent-edit": {
+      "name": "Silent Edit",
+      "description": "Edit messages without showing (edited) on the message.",
+      "author": "camposss <1340038288429547581>",
+      "icon": "PencilIcon",
+      "channels": {
+        "latest": "1.0.1"
+      },
+      "versions": {
+        "1.0.1": {
+          "url": "https://x0.at/KyUf.zip",
+          "sha256": "d8961f87944aff672641faf1b7e5798e4000296d26a4eb93fb6810d4afc27c68",
+          "size": 3825,
+          "dependencies": {
+            "valenced.api": {
+              "version": "*"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    }
+  }
+}
