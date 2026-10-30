@@ -9,11 +9,11 @@
       "author": "camposss <1340038288429547581>",
       "icon": "PencilIcon",
       "channels": {
-        "latest": "1.0.1"
+        "latest": "1.0.3"
       },
       "versions": {
         "1.0.1": {
-          "url": "https://files.catbox.moe/c5ufe7.zip",
+          "url": "https://files.catbox.moe/h9x3oc.zip",
           "sha256": "d8961f87944aff672641faf1b7e5798e4000296d26a4eb93fb6810d4afc27c68",
           "size": 3825,
           "dependencies": {
